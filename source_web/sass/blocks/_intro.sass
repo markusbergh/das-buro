@@ -1,0 +1,49 @@
+.intro
+
+.intro__content
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    display: -webkit-flex
+    -webkit-align-items: center
+    align-items: center
+    justify-content: center
+    -webkit-justify-content: center
+
+    p
+        margin: 40px 0 0 0
+        +font-size(14px)
+        text-align: center
+        opacity: 0.5
+
+.intro__logotype_image
+    +transform(scale(1.45))
+
+
+.intro__popup
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.75)
+    display: flex
+    display: -webkit-flex
+    -webkit-align-items: center
+    align-items: center
+    justify-content: center
+    -webkit-justify-content: center
+    z-index: 199
+
+    &.hidden
+        display: none
+
+.intro__popup_close
+    font-weight: 300
+    position: absolute
+    top: 50px
+    right: 50px
+    text-transform: uppercase

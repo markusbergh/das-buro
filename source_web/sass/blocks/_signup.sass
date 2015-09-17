@@ -1,0 +1,56 @@
+.signup
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    display: -webkit-flex
+    -webkit-align-items: center
+    align-items: center
+    justify-content: center
+    -webkit-justify-content: center
+
+    form
+        width: 100%
+
+    fieldset
+        border: 0
+
+    legend
+        +font-size(36px)
+        font-weight: 200
+        margin: 0 0 20px 0
+        border-bottom: 1px solid $color__white
+
+    label
+        +font-size(26px)
+        margin-right: 10px
+
+    input
+        +font-size(26px)
+        display: block
+        font-weight: 200
+        background: transparent
+        border-bottom: 0
+        border-top: 0
+        border-left: 0
+        border-right: 0
+        margin: 0 0 20px 0
+        color: $color__white
+
+        &:focus
+            outline: 0
+
+    input[type="radio"]
+        display: inline-block
+
+    input[type="submit"]
+        border: 2px solid $color__white
+        color: $color__white
+        padding: 12px 16px
+        margin: 30px 0 0 0
+
+    p
+        text-align: center
+        +font-size(22px)

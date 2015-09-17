@@ -1,0 +1,40 @@
+.row
+    max-width: $size__max-width-content
+    margin: 0 auto 50px auto
+    overflow: hidden
+
+    @media only screen and (max-width: $size__max-width-content)
+        margin: 0 5% 50px 5%
+
+.columns
+    float: left
+
+    @media only screen and (max-width: $break-desktop)
+        float: none
+
+    &.three
+        width: 28%
+        margin-right: 8%
+
+        &:nth-child(3n)
+            margin-right: 0
+
+        @media only screen and (max-width: $break-desktop)
+            width: 100%
+            margin-right: 0
+            margin-bottom: 50px
+
+    &.two
+        width: 45%
+        margin-right: 10%
+
+        &:nth-child(2n)
+            margin-right: 0
+
+        @media only screen and (max-width: $break-desktop)
+            width: 100%
+            margin-right: 0
+            margin-bottom: 50px
+
+    &.one
+        width: 100%
